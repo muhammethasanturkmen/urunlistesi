@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün Listesi</title>
+  <link rel="stylesheet" href="assets/css/urun.css">
+  <script src="assets/js/urun.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <form class="contact-form">
+      <h2>Ürün Listesi</h2>
+
+      <div class="form-group">
+        <label for="name">adı:</label>
+        <input required type="text" id="name" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="name">fiyat:</label>
+        <input required type="number" id="number" name="number">
+      </div>
+
+      <div class="form-group">
+        <label for="aciklama">Açıklama:</label>
+        <textarea id="aciklama" name="aciklama" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Kategori:</label>
+        <select id="category" name="category" required>
+            <option value="teknoloji">Gıda</option>
+            <option value="korku">Gıda Dışı</option>
+            <option value="saglik">Bakliyat</option>
+            <option value="gezi">İçecek</option>
+            <option value="yemek">Sos</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="resim">Görsel URL:</label>
+        <input type="text" id="resim" name="resim">
+      </div>
+
+      <button type="submit">ekle</button>
+    </form>
+    <button class="silme">silme</button>
+    <div class="teknoloji">
+      <h1>Gıda</h1>
+    </div>
+    <div class="korku">
+      <h1>Gıda Dışı</h1>
+    </div>
+    <div class="saglik">
+      <h1>Bakliyat</h1>
+    </div>
+    <div class="gezi">
+      <h1>İçecek</h1>
+    </div>
+    <div class="yemek">
+      <h1>Sos</h1>
+    </div>
+    
+  </div>
+</body>
+</html>
